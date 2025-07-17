@@ -24,7 +24,7 @@ class TwitterScroller(QMainWindow):
         super().__init__()
         self.resize(380, 480)
         self.setWindowTitle("Twitter Scroller Mini")
-        self.setWindowFlags(Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint)
+        self.setWindowFlags(Qt.WindowStaysOnTopHint)
 
         self.browser = QWebEngineView()
         self.browser.setHtml(EMBED_HTML)
